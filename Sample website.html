@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0px;
+            overflow: hidden;
+            padding: 0px;
+            list-style: none;
+            background-color: #333;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            height: 50px;
+            padding: 15px 17px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        li a:hover{
+            background-color: #111;
+            transition: ease-in-out 0.2s ;
+            transform: scale(0.9);
+        }
+        .active{
+            background-color: crimson;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .header{
+            background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) , url("corona2.jpg");
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed; color: white;
+            text-align: center;
+            font-size:5vw;
+            font-family: "Arial Black",sans-serif;
+        }
+
+        .clearfix{
+            content: '';
+            margin: 7px;
+            clear: both;
+            display: table;
+            overflow: auto;
+
+        }
+        .img-container{
+            margin-right: 20px;
+            margin-bottom: 20px;
+            float: left;
+            padding: 5px;
+            width: 30%;
+            height: 10%;
+            box-shadow: 0px 3px 16px 7px rgba(30,30,60,0.25);
+        }
+        .footer{
+            color: white;
+            font-size: xx-large;
+            text-align: center;
+            background-color: #333333;
+            padding: 50px;
+        }
+        .p{
+            font-size: large;
+            border: 1.5px dashed black;
+            overflow: auto;
+            padding: 2px;
+
+        }
+
+        .span1{
+            background-color: grey;
+            margin:4px;
+            font-size:x-large;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div >
+    <nav >
+        <ul >
+            <li ><a href="#" class="active">Home</a></li>
+            <li > <a href="#foot">About</a></li>
+            <li ><a href="#">More</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<header class="header"><br>
+    <div >Corona Virus</div>
+</header>
+<section class="clearfix">
+    <img >
+    <img class="img-container" src="corona_poster.png" title="Covid-19 Poster" alt="img">
+    <h2>
+        To stop the spread of <span style="background: #a21a2a;padding: 2px;border-radius: 5px;">Corona Virus</span>.
+        We all must follow the certain precautions :-</h2>
+    <p class="p">
+        <strong>1.</strong> <span class="span1" >Wash your hands </span>
+        frequently and thoroughly with handwash for atleast 20 seconds.
+        Use alcohol based hand sanetizer ,if soap and water isn't available .
+    </p>
+    <p class="p">
+        <strong>2.</strong> <span class="span1">Cover your mouth and nose </span>
+        with handerchif and wear a mask always. Cover your mouth with elbow or tissue while sneezing. And wash your
+        hands.
+    </p>
+    <p class="p">
+        <strong>3.</strong> <span class="span1"> Clean and Disinfect </span>
+        Don't touch surfaces directly use a tissue or wear hand gloves .
+        Regularly clean the surfaces which might spread the virus.
+    </p>
+    <p class="p">
+        <strong>4.</strong> <span class="span1"> Avoid Close Contact </span>
+        Maintain the actual distance of 6 feet's or 2 meter's while talking or in a queue.
+    </p>
+</section>
+
+
+</section>
+<footer class="footer" id="foot"> Foot Text</footer>
+
+</body>
+</html>

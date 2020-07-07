@@ -30,7 +30,7 @@ li a:hover{
     box-sizing: border-box;
 }
 .header{
-    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) , url("corona2.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) , url("covid.jpg");
     background-size: cover;
     height: 100vh;
     background-attachment: fixed; color: white;

@@ -16,7 +16,6 @@ html,body{
 .li-search{
     float: right;
     margin-top: 10px;
-    size: auto;
 }
 .searc{
     padding: 10px;
@@ -24,10 +23,7 @@ html,body{
     background: none;
 }
 .searc:hover{
-    padding:8px;
-    color: grey;
-    border-radius: 5px;
-    background-color: white;
+    color: whitesmoke;
 }
 .li a{
     height: 50px;
@@ -185,8 +181,9 @@ html,body{
     display: block;
     -webkit-align-content: flex-end;
     margin-left: 30px;
+    position: relative;
 }
-.a-button{
+.body-section .a-button{
     text-decoration: none;
     color: white;
     border: 1px solid crimson;
@@ -194,10 +191,12 @@ html,body{
     padding: 5px;
     font-size: large;
     border-radius: 13px;
+    top:70%;
+    left:20%;
     float: left;
 }
 .a-button:hover{
-    background-color: brown;
+    background-color: red;
     color: white;
     transform: scale(1.02);
    transition: 0.2s;

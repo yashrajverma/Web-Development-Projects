@@ -50,29 +50,28 @@ html,body{
     box-sizing: border-box;
 }
 .header{
-    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) , url("../resources/covid.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.45)) , url("../resources/covid.jpg");
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
     color: white;
-    align-content: center;
     font-family: "Arial Black",sans-serif;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 1.0;
     overflow-style: auto;
 }
 
 .main-division{
-    margin: 15px;
-    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px ;
     border-radius: 5px;
-    border: 0.2px solid grey ;
-    background-color: white;
-    box-shadow: 0px 3px 16px 7px rgba(30,30,60,0.25);
+    box-shadow: 0px 3px 10px 5px rgba(30,30,60,0.25);
 }
 .clearfix{
     content: "";
@@ -81,24 +80,26 @@ html,body{
     display: table;
     overflow: auto;
 }
-.img-container{
-    margin-right: 26px;
+.img-container-left{
+    margin-right: 30px;
     margin-bottom: 26px;
     float: left;
-    padding: 5px;
-    width: 200px;
-    height: 400px;
-    min-width:300px ;
-    opacity: 0.6;
-    box-shadow: 0 3px 16px 7px rgba(30,30,60,0.25);
+    width: 300px;
+    height: 250px;
+    clear: left;
+    box-shadow: 0px 3px 10px 5px rgba(30,30,60,0.25);
+    border-radius: 5px;
 }
-.img-container:hover{
-    overflow: auto;
-    opacity: 1.0;
-    transition: 0.3s;
-    transform: scale(1.04);
+.img-container-right{
+    margin-left: 30px;
+    margin-right: 0;
+    margin-bottom: 26px;
+    float: right;
+    width: 350px;
+    height: 260px;
+    box-shadow: 0px 3px 10px 5px rgba(30,30,60,0.25);
+    border-radius: 5px;
 }
-
 .p{
     font-size: large;
     overflow: auto;
@@ -116,7 +117,7 @@ html,body{
 /*<!------------------ footer --------->*/
 .footer{
     background: dimgrey;
-    margin: 0px;
+    margin: 0;
     padding: 20px;
 }
 .footer ul{
@@ -180,10 +181,9 @@ html,body{
 
 /*====================================================   This is the body section part    ==================================*/
 .body-section{
-    margin-left: 30px;
     margin-top: 20px;
     display: block;
-    align-content: center;
+    -webkit-align-content: flex-end;
     margin-left: 30px;
 }
 .a-button{

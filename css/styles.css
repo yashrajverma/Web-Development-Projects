@@ -1,0 +1,231 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.ul{
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    list-style: none;
+    background-color: #333;
+}
+.li{
+    float: left;
+}
+.li-search{
+    float: right;
+    margin-top: 10px;
+    size: auto;
+}
+.searc{
+    padding: 10px;
+    color: #b7b2ba;
+    background: none;
+}
+.searc:hover{
+    padding:8px;
+    color: grey;
+    border-radius: 5px;
+    background-color: white;
+}
+.li a{
+    height: 50px;
+    padding: 15px 17px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+.li a:hover{
+    background-color: #111;
+    transition: ease-in-out 0.2s ;
+    transform: scale(0.9);
+}
+.active{
+    background-color: crimson;
+}
+
+* {
+    box-sizing: border-box;
+}
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) , url("../resources/covid.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    color: white;
+    align-content: center;
+    font-family: "Arial Black",sans-serif;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 1.0;
+    overflow-style: auto;
+}
+
+.main-division{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.2px solid grey ;
+    background-color: white;
+    box-shadow: 0px 3px 16px 7px rgba(30,30,60,0.25);
+}
+.clearfix{
+    content: "";
+    margin: 7px;
+    clear: both;
+    display: table;
+    overflow: auto;
+}
+.img-container{
+    margin-right: 26px;
+    margin-bottom: 26px;
+    float: left;
+    padding: 5px;
+    width: 200px;
+    height: 400px;
+    min-width:300px ;
+    opacity: 0.6;
+    box-shadow: 0 3px 16px 7px rgba(30,30,60,0.25);
+}
+.img-container:hover{
+    overflow: auto;
+    opacity: 1.0;
+    transition: 0.3s;
+    transform: scale(1.04);
+}
+
+.p{
+    font-size: large;
+    overflow: auto;
+    padding: 2px;
+}
+
+.span1{
+    background-color: grey;
+    margin:5px;
+    padding: 1px;
+    font-size:x-large;
+    border-radius: 8px;
+    color: white;
+}
+/*<!------------------ footer --------->*/
+.footer{
+    background: dimgrey;
+    margin: 0px;
+    padding: 20px;
+}
+.footer ul{
+    overflow: hidden;
+    list-style: none;
+}
+.footer li{
+    float: right;
+    display: block;
+    padding: 14px 16px;
+}
+.li-p{
+    text-decoration: none;
+}
+.li-p:hover{
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background: none;
+    text-decoration: none;
+}
+.footer li a{
+    padding: 10px;
+    color: grey;
+    font-size:large ;
+}
+.li-fb:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    border-radius: 10px;
+    color: white;
+    background-color: cornflowerblue;
+}
+.li-in:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    border-radius: 10px;
+    background-color: hotpink;
+    color: white;
+}
+.li-linked:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    border-radius: 10px;
+    color: white;
+    background-color: dodgerblue;
+}
+.li-mail:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    border-radius: 10px;
+    color:darkred;
+    background-color: white;
+}
+@media screen and (max-width:800px) {
+    .img-container, .main, .right {
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+/*====================================================   This is the body section part    ==================================*/
+.body-section{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: block;
+    align-content: center;
+    margin-left: 30px;
+}
+.a-button{
+    text-decoration: none;
+    color: white;
+    border: 1px solid crimson;
+    background: none;
+    padding: 5px;
+    font-size: large;
+    border-radius: 13px;
+    float: left;
+}
+.a-button:hover{
+    background-color: brown;
+    color: white;
+    transform: scale(1.02);
+   transition: 0.2s;
+}
+
+/*  ------------------------------------------------------------------  back to top--------------------------------------------------       */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background:#7f0004;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+    background:#1a6a9e;
+    color: #fff;
+}
